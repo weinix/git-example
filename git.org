@@ -7,7 +7,16 @@
 - Git is the most popular version control system/tool
 * Git basics
 - create a git repositary
+  #+begin_src bash
+  git init .
+  #+end_src
+  This will create a hidden directory ~.git~.
 - add/commit
+  #+begin_src bash
+  git add file1 #or
+  git add .
+  git commit -m 'Some meaningful messages about this commit.'
+  #+end_src
 - branch
   - create branch
     #+begin_src bash
