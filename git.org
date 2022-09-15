@@ -1,0 +1,34 @@
+#+TITLE: Git
+* What is git
+- what is version control
+- other version control tools
+  - git
+  - svn
+- Git is the most popular version control system/tool
+* Git basics
+- create a git repositary
+- add/commit
+- branch
+  - create branch
+    #+begin_src bash
+      git checkout -b develop
+      git checkout -b test-idea1
+    #+end_src
+    do some work
+  - push branch
+    #+begin_src bash
+    git push
+    #or
+    git push --all
+    #+end_src
+  - merge branch
+    #+begin_src bash
+     git checkout develop
+     git merge test-idea1
+    #+end_src
+    Note: when work in group project, each developer should work on their own feature branch then push to gitlab/github, then create a merge request/pull request to merge their code to develop branch.
+  - branch schema
+    - master: stable release to customer
+    - develop: stable internal development
+    - feature branches: each developer work on their own feature branch
+    - hotfix branches: branched from master, work on bug fixes
